@@ -3,10 +3,31 @@
   --main-secondary-title-color: #303030;
   --accent-color: #ff6c00;
   --secondary-font: "Raleway", sans-serif;
+  --basic-margin: 20px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .list {
   list-style: none;
@@ -26,6 +47,7 @@ body {
 
 .header {
   background-color: gray;
+  padding: 32px 0;
 }
 .header-navigation {
 }
@@ -107,6 +129,7 @@ body {
 }
 .hero-subtitle {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--basic-margin);
 }
 .hero-title {
   font-family: "Raleway", sans-serif;
@@ -114,8 +137,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
-}
-.title {
+  margin-bottom: var(--basic-margin);
 }
 .hero-description {
   font-size: 18px;
